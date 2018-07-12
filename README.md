@@ -1,7 +1,6 @@
 # nvim-ide
 This a tutorial to setup nvim as a powerful ide.
 ## easy install
-------
 1. download neovim from [neovim release](https://github.com/neovim/neovim/releases), add nvim to PATH.
 ```
 chmod u+x nvim.appimage
@@ -25,7 +24,6 @@ python3 install.py --clang-completer
 9. enter nvim, execute `:UpdateRemotePlugins` and reboot nvim.
 
 ## offline install
-------
 1. you could tar the clean neovim and .config/nvim directory, copy to server, then untar it.
 2. if you're on a ubuntu 14 server, python3 version would be not newest, and you may have no permission to install python packages. then you could build python3 by yourself.
 ```
@@ -55,7 +53,6 @@ EXTRA_CMAKE_ARGS="-DPATH_TO_LLVM_ROOT='/home/xxx/clang_llvm'" python3 install.py
 ```
 
 ## project setup
-------
 1. download [vimenv](https://raw.githubusercontent.com/chyxwzn/configFiles/master/vimenv) and [addsrc.sh](https://raw.githubusercontent.com/chyxwzn/configFiles/master/addsrc.sh), put in `~/bin`.
 2. download [compdb](https://github.com/chyxwzn/compdb), put in `~/bin`
 3. if you are in a large project, edit vimenv, add the source directories you need. then execute vimenv to generate project files. then it could save vim session, could locate files fast use ctrlp. and could navigate code using ctags.
@@ -69,5 +66,5 @@ make -w(--print-directory)
 make -j32 -Bnkw -C . -f build/core/main.mk all_modules "BUILD_MODULES_IN_PATH=xxx/xxx"
 ```
 then you could execute `compdb.py -p make.log` to generate compile_commands.json
-------
+***
 finally, you could use nvim to trace code and write code fast. to explore more features, you should learn `init.vim` file, it contains all the configurations.
