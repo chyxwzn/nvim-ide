@@ -22,6 +22,7 @@ This a tutorial to setup nvim as a powerful ide.
     ```
 8. install [ripgrep](https://github.com/BurntSushi/ripgrep/releases)
 9. enter nvim, execute `:UpdateRemotePlugins` and reboot nvim.
+10. the default color scheme is true color scheme, so the terminal should support true color. if you ssh on windows, I think the latest development version of [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/snapshot.html) is a better choise.
 
 ## offline install
 1. you could tar the clean neovim and .config/nvim directory, copy to server, then untar it.
